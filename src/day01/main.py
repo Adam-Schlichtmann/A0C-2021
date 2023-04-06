@@ -1,5 +1,5 @@
 def parseInput():
-  f = open("./src/day01/input.txt", "r")
+  f = open("input.txt", "r")
   l = list(map(lambda x: int(x), filter(lambda x: x, f.read().split("\n"))))
   return l
 
