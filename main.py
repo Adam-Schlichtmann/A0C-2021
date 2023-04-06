@@ -16,5 +16,8 @@ class colors:
 
 if (len(sys.argv) != 2):
   print(f"{colors.FAIL}Invalid options.\n{colors.WARNING}Usage:`python3 main.py [day]`")
+  exit(0)
 
-os.system("python3 ./src/day{:02d}/main.py".format(int(sys.argv[1])))
+
+os.system("cd src/day{:02d} && python3 main.py".format(int(sys.argv[1])))
+
