@@ -19,7 +19,7 @@ def remove(line, i):
 start = ["{", "[", "<", "("]
 def cleanRow(line, i = 1):
   if i >= len(line):
-    print("OUT OF INDEX")
+    # Not corrupted
     return 0
   if line[i] in start:
     return cleanRow(line, i+1)
